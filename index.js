@@ -1,10 +1,12 @@
 import "dotenv/config.js";
 import express from "express";
+import cors from "cors";
 
 import { CreateTaskController } from "./src/controllers/create-task.js";
 import { GetTasksController } from "./src/controllers/get-tasks.js";
 
 const app = express();
+app.use(cors());
 
 app.use(express.json());
 
