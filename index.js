@@ -1,4 +1,5 @@
-const express = require("express");
+import "dotenv/config.js";
+import express from "express";
 
 const app = express();
 
